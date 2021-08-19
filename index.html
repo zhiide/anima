@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <title>ACTIVE TEAM</title>
+    <script>
+        $(window).scroll(function() {
+            $('#animatedElement').each(function(){
+            var imagePos = $(this).offset().top;
+    
+            var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+400) {
+                    $(this).addClass("slideUp");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar slideUp" id="object">
+            <p class="logo">Active Team</p>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Presentaion</a></li>
+                <li><a href="#">programming</a></li>
+                <li><a href="#">Certification</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1 id="object" class="slideUp">ACTIVE TEAM</h1>
+            <p id="object" class="slideUp">KELECHEK UNION<br> JYLDYZ ACADEMY</p>
+            <div id="object" class="slideUp">
+                <button type="button"><span></span>WATCH MORE</button>
+                <button type="button"><span></span>SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
